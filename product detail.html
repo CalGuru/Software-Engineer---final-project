@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en>
+
+<head><
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Big FootWear</title>
+    <link rel="stylesheet" href="bigfoot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Lao:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="E com/logooo.png" width="250px">
+            </div>
+            <nav>
+                <ul  id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <img src="E com/cart.png" width="30px" height="30px">
+            <img src="E com/menu.png" class="menu-icon" onclick="munutoggle()">
+        </div>
+    </div>
+
+<!---------------------single product details----------->
+
+
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="E com/leatherR.png" id="ProductImg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="E com/black clarks.png" class="small-img">
+
+                        </div>
+                        <div class="small-img-col">
+                            <img src="E com/purebrown.png" class="small-img">
+
+                        </div>
+                        <div class="small-img-col">
+                            <img src="E com/junglegreen.png" class="small-img">
+
+                        </div>
+                        <div class="small-img-col">
+                            <img src="E com/pureblack.png"class="small-img">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p> Brown Boot - In Stock</p>
+                    <h1>Clarks Leather Boot </h1>
+                    <h4>Kes 5200</h4>
+                    <select>
+                        <option >Select Size</option>
+                        <option >41</option>
+                        <option >42</option>
+                        <option >43</option>
+                        <option >44</option>
+                        <option >45</option>
+                    </select>
+                    <select>
+                        <option >Color</option>
+                        <option >Brown</option>
+                        <option >Black</option>
+                        <option >Jungle-Green</option>
+                        <option >Grey</option>
+                        <option >Blue</option>
+                    </select>
+                    <input type="number" value="1">
+                    <a href=""class="btn"> Add to Cart</a>
+
+                    <h3>Product Details</h3>
+                    <br>
+                    <p>Leather shoes with rubber sole, perfect for all terrains.<br>"Ignite your appearance by getting a pair of Clarks. 
+                        Lead the shoe game, be the vibe she wants."</p>
+                </div>
+            </div>
+        </div>
+
+<!----------------title--------------->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+
+            </div>
+        </div>
+
+
+
+
+    <div class="small-container">
+         <div class="row">
+             <div class="col-4">
+            <img src="E com/brownclerks-removebg-preview.png" width="380px" height="470px">
+            <h4> Brown Leather Clarks</h4>
+        
+            <p>KES 5,200</p>
+        </div>
+        <div class="col-4">
+            <img src="E com/blackclerk-removebg-preview.png" width="380px" height="470px">
+            <h4> Black Clarks</h4>
+        
+            <p>KES 5,200</p>
+        </div>
+        <div class="col-4">
+            <img src="E com/Jungleclerk-removebg-preview.png" width="380px" height="470px">
+            <h4> Jungle Leather Clarks</h4>
+        
+            <p>KES 5,200</p>
+        </div> 
+    </div>
+    
+</div>
+
+<!---------------footer------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3> Visit Our Shop</h3>
+                    <p> We are located near Old <br> Naivas  Supermarket at <br>Ronald Ngala Stret</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="E com/logooo.png">
+                    <p> Our aim is simplify your footwear search!</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3> Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Join Affiliate</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3> Follow Us</h3>
+                    <ul> 
+                        <li> WhatsApp</li>
+                        <li> Instagram</li>
+                        <li> Twitter</li>
+                        <li> Facebook</li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright Big FootWear 2023 </p>
+        </div>
+    </div>
+</div>
+<!------------js for toggle------------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight ="0px";
+        function menutoggle() {
+            if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight ="200px";
+            }
+            else
+            {
+                MenuItems.style.maxHeight ="0px";
+            }
+        }
+    </script>
+
+<!---------------------------js for product pictures------------>
+
+<script>
+    var ProductImg = document.getElementById("ProductImg");
+    var SmallImg  = document.getElementsByClassName("small-img");
+
+    SmallImg[0].onclick = function() 
+    {
+        ProductImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].onclick = function() 
+    {
+        ProductImg.src = SmallImg[1].src;
+    }
+    SmallImg[2].onclick = function() 
+    {
+        ProductImg.src = SmallImg[2].src;
+    }
+    SmallImg[3].onclick = function() 
+    {
+        ProductImg.src = SmallImg[3].src;
+    }
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>
